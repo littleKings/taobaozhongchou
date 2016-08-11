@@ -1,0 +1,342 @@
+a = 1190px
+*
+	margin 0
+	padding 0
+	font-size 10px
+.wrap
+	width 100%
+header 
+	width a
+	height 120px
+	background-image url("../img/header.png")
+	margin 0 auto
+nav
+	height 50px
+	border-bottom 2px solid rgb(0,204,206)
+	.divNav
+		width a
+		margin 0 auto
+		ul
+			li
+				list-style none
+				float left
+				width 150px
+				margin-top 25px
+				font-size 10px 
+				line-height 10px
+				text-align center
+				border-right 1px solid rgb(230,230,230)
+				&:hover 
+					color rgb(0,204,206)
+				&:last-child
+					border none	
+			&.left
+				float left
+				li
+					&:nth-child(2)
+						position relative
+						.select
+							position absolute
+							top 15px
+							left 15px
+							width 120px
+							height 400px
+							background-image url("../img/select.png")
+							z-index 1
+							display none			
+			&.right
+				float right
+				li
+					&:nth-child(2)
+						position relative
+						.select
+							position absolute
+							top 15px
+							left 15px
+							width 126px
+							height 120px
+							background-image url("../img/select2.png")
+							z-index 1
+							display none
+.content
+	width a
+	margin 0px auto
+	margin-top 20px
+	display flex
+	.left
+		display flex
+		flex-flow row wrap
+		flex-basis 890px
+		.banner
+			flex-basis 540px
+			height 500px
+		.middle
+			flex-basis 350px
+			img 
+				display block
+		.bottom	
+			flex-basis 890px
+			height 140px
+			margin-top 20px
+			background-image url("../img/left-bottom.png")
+	.right
+		margin-left 10px
+		flex-basis 290px
+		.top
+			width 290px
+			height 78px
+			line-height 78px
+			background-image url("../img/bg1.png")
+			.text
+				font-size 28px
+				position relative
+				left 20px
+				color #FFF
+			.btn
+				position relative
+				top -6px
+				font-size 0
+				left 102px
+				a
+					display inline-block
+					line-height 28px
+					width 28px
+					font-size 20px
+					text-align center
+					&.toLeft
+						color rgb(0,0,0,.3)
+						background rgb(255,255,255,.3)
+						opacity 0.3
+					&.toRight
+						color rgb(0,0,0,.4)
+						background rgb(255,255,255,.4)
+						opacity 0.4
+					&:hover
+						color rgb(0,0,0,.4)
+						opacity 0.6
+						background rgb(255,255,255,.5)
+		.item
+			width 290px
+			height 194.3px
+			position relative
+			img
+				width 290px
+				height 194.3px
+			span
+				display inline-block
+				position absolute
+				bottom 0px
+				right 0px
+				color white
+				padding 10px
+				background-color rgb(254,100,90)				
+.loading
+	height 634px
+	background-image url("http://img.alicdn.com/tps/TB1tkY2JpXXXXaQXVXXXXXXXXXX-2220-634.png")
+	color rgb(255,255,255)
+	.wrap
+		width a
+		height 634px
+		margin 0px auto
+		.title
+			padding-top 30px
+			text-align center
+			font-size 30px
+		.tag
+			margin-top 20px
+			text-align center
+			font-size 10px
+			a
+				line-height 10px
+				border-radius 2px
+				border 1px solid rgb(255,255,255)
+				padding 5px
+				margin 5px
+				&:hover 
+					border 1px solid rgb(0,204,206)
+					background-color rgb(0,204,206)
+		.main
+			width 1210px
+			a
+				float left
+				margin-top 20px
+				margin-right 20px
+				width 222px
+				height 450px
+				position relative
+				span
+					position absolute
+					&.itemTitle
+						padding-left 18px
+						color #2a343f
+						font-size 24px
+						height 58px
+						line-height 58px
+						overflow hidden
+						width 200px
+					&.des
+						top 75px
+						width 138px
+						padding-left 18px
+						font-size 12px
+						color #99a5b4
+						line-height 18px
+						height 35px
+					&.textPer
+						top 105px
+						font-size 16px
+						color #828c98
+						padding-left 18px
+						margin-top 30px
+					&.per
+						top 150px
+						font-size 31px
+						color rgb(0,204,206)
+						padding-left 18px
+						height 40px
+						line-height 40px
+						font-family Helvetica
+				&.tab1
+					background-image url("../img/10.jpg")
+				&.tab2
+					background-image url("../img/11.jpg")
+				&.tab3
+					background-image url("../img/12.jpg")
+				&.tab4
+					background-image url("../img/13.jpg")
+				&.tab5
+					background-image url("../img/14.jpg")
+				
+.list
+	width a
+	margin 0 auto
+	margin-top 50px	
+	.title
+		height 60px
+		background-image url("../img/bg_title.png")
+		background-repeat repeat-x
+		text-align center
+		span
+			font-size 30px
+			padding 10px
+			background-color rgb(255,255,255)
+		.text
+			margin-top 5px
+			font-size 14px
+			color rgb(143,143,143)
+	.floor
+		margin-top 20px
+		span
+			&.num
+				font-size 14px
+			&.name
+				font-size 20px
+		&:hover
+			color rgb(0,204,206)
+	.content
+		width 1190px
+		height 370px
+		
+		.main
+			width 280px
+			height 370px
+			&:not(:last-child)
+				margin-right 20px
+			.pic
+				width 280px
+				height 187px
+			.current
+				font-size 15px
+				margin 11px 15px
+				height: 42px
+			label
+				display inline-block
+				height 23px
+				color #999
+				line-height 23px
+				background-color #f0f0f0
+				padding 0 8px
+				margin-left 10px
+				margin-right 8px
+				cursor pointer
+			.bar
+				width 250px
+				height 6px
+				margin 10px
+				border-radius 5px
+				background-color rgb(0,204,206)
+				border-right-color rgb(237,237,237)
+				border-right-style solid
+			.project
+				width 250px
+				margin 10px
+				span
+					text-align center
+					display inline-block
+					&.spLeft
+						width 50px
+					&.spMiddle
+						width 130px
+					&.spRight
+						width 50px
+						margin-right 10px
+					.num
+						display block
+						font-size 14px
+						line-height 14px
+						color #333
+					.name
+						display block
+						font-size 12px
+						line-height 12px
+						margin-top 5px
+						color rgb(153,153,153)
+			
+			&.top
+				position relative
+				.pic
+					width 346px
+					height 370px
+					z-index -1
+					position absolute
+					top 0px
+					left -66px
+					
+				&.img
+					.nav
+						.pic
+							width 280px
+							z-index -1
+							position absolute
+							left 0px
+				.item
+					color rgb(255,255,255)
+					margin-top 27px
+					margin-left 28px
+					.name
+						font-size 24px
+						line-height 24px
+					.money
+						margin-top 10px
+						font-size 14px
+						line-height 14px
+					span
+						display block
+						width 100px
+						height 31px
+						line-height 31px
+						font-size 14px
+						// margin-top 19px
+						cursor pointer
+						text-align center
+						margin-top 20px
+						color rgb(0,0,0)
+						background-color white
+		
+footer
+	width a
+	height 150px
+	margin 0 auto
+	background-image url("../img/footer.png")
+				
+							
